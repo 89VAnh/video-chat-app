@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ivy Streams</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <button id="join-btn">
+      Join Stream <ion-icon name="enter-outline"></ion-icon>
+    </button>
+
+    <div id="stream-wrapper">
+      <div id="video-streams"></div>
+
+      <div id="stream-controls">
+        <button class="mic-btn">
+          <ion-icon name="mic-outline" class="icon-on"></ion-icon>
+          <ion-icon name="mic-off-outline" class="icon-off"></ion-icon>
+        </button>
+        <button class="camera-btn">
+          <ion-icon name="videocam-outline" class="icon-on"></ion-icon>
+          <ion-icon name="videocam-off-outline" class="icon-off"></ion-icon>
+        </button>
+        <button class="leave-btn">
+          <ion-icon name="call-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </body>
+  <!-- <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script> -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="AgoraRTC_N-4.7.3.js"></script>
+  <script src="main.js"></script>
+</html>
