@@ -36,6 +36,7 @@ let joinStream = async () => {
   await joinAndDisplayLocalStream();
   getID("join-btn").style.display = "none";
   getID("stream-controls").style.display = "flex";
+  await localTracks[1].setMuted(true);
 };
 
 let handleUserJoined = async (user, mediaType) => {
